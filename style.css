@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.mobile-content{
+    display: none;
+}
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -436,6 +439,7 @@ svg {
     padding-left: 2.5%;
     justify-content: center;
     gap: 10%;
+    margin-top: 2.5%;
 }
 
 .text_conteneur_1>h1 {
@@ -472,7 +476,7 @@ svg {
     align-items: center;
     align-content: center;
     padding-bottom: 2%;
-    border-bottom: 4px solid rgb(131, 194, 37);
+    border-bottom: 4px solid rgba(0, 128, 0, 0.466);
     margin-bottom: 2%;
 }
 
@@ -501,8 +505,27 @@ svg {
 }
 
 
-@media all and (max-width:700px) {
+@media all and (max-width:800px) {
 
+    .mobile-content{
+        display: flex;
+        background-color: green;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        width: 100dvw;
+        height: 100dvh;
+        justify-content: center;
+        align-items: center;
+    }
+            
+    body{
+        overflow: hidden;
+    }
+
+    .pc-content{
+        display: none;
+    }
     nav{
         width: 100%;
         justify-content: space-between;
