@@ -225,7 +225,7 @@ header>p {
 }
 
 #DonateNow:hover {
-    color:mediumseagreen;
+    color:green;
 }
 
 #DonateNow>img {
@@ -300,8 +300,8 @@ header>p {
 }
 
 .linker {
-    border-top: 10px dotted mediumseagreen;
-    border-bottom: 10px dotted mediumseagreen;
+    border-top: 10px dotted green;
+    border-bottom: 10px dotted green;
     border-right: 10px dotted white;
     border-radius: 50%;
     width: 30%;
@@ -405,7 +405,7 @@ header>p {
     transition: all 0.2s;
 }
 .HEI:hover{
-    color:mediumseagreen;
+    color:green;
 }
 footer {
     display: flex;
@@ -439,7 +439,7 @@ svg {
 }
 
 .text_conteneur_1>h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .text_conteneur_2 {
@@ -455,9 +455,10 @@ svg {
 .text_conteneur_2 > a{
     margin-left: 50%;
     transition: all 0.2s;
+    width: 90%;
 }
 .text_conteneur_2 > a:hover{
-    color:mediumseagreen ;
+    color:green ;
     transform: translateX(5px);
 }
 
@@ -490,8 +491,8 @@ svg {
 }
 
 .text_conteneur_2 img {
-    width: 15%;
-    height:75%;
+    width: 12.5%;
+    height:55%;
 }
 
 #location_text {
