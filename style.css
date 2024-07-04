@@ -506,9 +506,18 @@ svg {
 
 
 @media all and (max-width:800px) {
-
-    .mobile-content{
+    #mobileCheck{
         display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100dvw;
+        height: 100dvh;
+        background-color: green;
+        color: white;
+        align-items: center;
+    }
+    .mobile-content{
+        display: none;
         /*background-color: green;*/
         font-size: 2rem;
         text-align: center;
