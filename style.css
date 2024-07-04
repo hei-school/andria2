@@ -120,7 +120,7 @@ a {
 }
 
 
-header {
+#header {
     display: flex;
     flex-direction: column;
     width: 100dvw;
@@ -155,7 +155,7 @@ header {
     }
 }
 
-header>h1 {
+#header>h1 {
     width: 50%;
     height: 10%;
     display: flex;
@@ -190,7 +190,7 @@ h1>hr {
     margin-left: 18%;
 }
 
-header>p {
+#header>p {
     width: 50%;
     height: 10%;
     display: flex;
@@ -509,14 +509,14 @@ svg {
 
     .mobile-content{
         display: flex;
-        background-color: green;
+        /*background-color: green;*/
         font-size: 2rem;
         text-align: center;
         color: white;
-        width: 100dvw;
-        height: 100dvh;
+        /*width: 100dvw;
+        height: 100dvh;*/
         justify-content: center;
-        align-items: center;
+        /*align-items: center;*/
     }
             
     body{
@@ -526,72 +526,65 @@ svg {
     .pc-content{
         display: none;
     }
-    nav{
+    .mobile-content > nav{
+        position: absolute;
+        top: 0;
+    }
+    .mobile-content nav{
+        height: 10dvh;
+    }
+    h2{
+        display: flex;
+        font-size: 1.25rem;
         width: 100%;
-        justify-content: space-between;
+        height: 5dvh;
+        justify-content: center;
+        text-align: center;
     }
-    nav h1{
-        font-size: 1.5rem;
-        width: 50dvw;
-        gap: 10%;
-    }
-    .home{
-        display: none;
-    }
-    nav a{
-        font-size: 1rem;
-    }
-    #logo{
-        width: 20dvw;
-    }
-    #button{
-        width: 50dvw;
+    h2 > a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
         justify-content: center;
     }
     #Donate{
-        width: 75%;
-        height: 50%;
+        width: 100%;
     }
-    header{
+    #headerMobile{
+        display: flex; 
         flex-direction: column;
-        text-align: center;
-        height: 50dvh;
+        width: 100dvw;
+        height: 80dvh;
         justify-content: center;
+        gap: 5%;
+        color: black;
+        text-align: left;
     }
-
-    header > .container{
-        display: none;
-        
-    }
-
-    header > h1{
+    #headerMobile  h1{
         font-size: 3rem;
-        top: 15dvh;
-        left: 10dvw;
-        right: auto;
-
-    }
-    header > p {
-        top: 24dvh;
-        left: 10dvw;
-        right: auto;
-        width:80dvw ;
-    }
-    #DonateNow{
-        top: 40dvh;
-        left: 15dvw;
-        width: 70dvw;
-        height: 7.5dvh;
-        font-size: 2rem;
-        border: 1px solid goldenrod;
-        border-radius: 20px;
-    }
-    #DonateNow img{
-        width: 20%;
-        height: 70%;
+        color: green;
         
     }
-    header hr{
-        display: none;
+    #DonateNowMobile{
+        width: 100dvw;
+        height: 10dvh;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid green;
+        border-bottom: 1px solid green;
+        color: green;
+        
+    }
+    
+    #DonateNowMobile > img{
+        width: 20%;
+        height: 100%;
     }
 }
