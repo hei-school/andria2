@@ -630,7 +630,7 @@ svg {
     
     #DonateNowMobile > img{
         width: 25%;
-        height: 100%;
+        height: 70%;
     }
     #mobileLocation {
         color: black;
@@ -684,7 +684,7 @@ svg {
 
     }
     #don{
-        margin-top: 15%;
+        margin-top:7.5%;
     }
     #don h1{
         color: green;
@@ -695,9 +695,44 @@ svg {
         flex-direction: column;
         color: black;
         font-size: 1.5rem;
+        border: 1px solid green;
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-left:3%;
+        width: 95dvw;
+    }
+    .donMobileContainer p{
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 3%;
+        font-weight: 300;
     }
     .donMobileContainer a{
+        display: flex;
         font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .donMobileContainer a:hover{
+        color: white;
+    }
+    .donMobileContainer h1{
+        display: flex;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 15dvh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color:rgb(99, 158, 11);
+        border: 1px solid white;
+        color: white;
     }
     #mobileFooter{
         background-color: green;
