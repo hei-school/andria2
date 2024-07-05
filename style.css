@@ -625,12 +625,23 @@ svg {
     #mobileLocation {
         color: black;
         text-align: left;
+        
     }
     #mobileLocation img{
         width: 100%;
     }
     #mobileLocation h1{
         color: black;
+        font-size: 1.5rem;
+    }
+    #mobileLocation p{
+        font-size: 1.5rem;
+
+        margin-top: 10%;
+        margin-left: 2.5%;
+    }
+    #mobileLocation a{
+        color: green;
     }
     #mobileBut{
         margin-top: 15%;
