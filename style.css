@@ -587,23 +587,24 @@ svg {
         display: flex; 
         flex-direction: column;
         width: 100vw;
-        height: 80vh;
+        height: 65vh;
         justify-content: center;
         gap: 7.5%;
         color: black;
         text-align: left;
         position: relative;
-        margin-top: 10%;
-        margin-left: 2.5%;
     }
     #headerMobile  h1{
         font-size: 3rem;
         color: green;
         margin: 0 auto;
+        margin-top: 25%;
         
     }
     #headerMobile p{
         font-size:1rem;
+        margin-left: 2.5%;
+
     }
     #DonateNowMobile{
         width: 50dvw;
@@ -615,7 +616,9 @@ svg {
         align-items: center;
         color: green;
         border: 1px solid green;   
-        font-size: 1.25rem;     
+        font-size: 1.25rem;  
+        margin-left: 2.5%;
+   
     }
     
     #DonateNowMobile > img{
@@ -629,19 +632,25 @@ svg {
     }
     #mobileLocation img{
         width: 100%;
+        margin-right: 2%;
     }
     #mobileLocation h1{
-        color: black;
-        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+        font-size: 1.25rem;
+        margin-left: 2.5%;
+        font-weight: 300;
+
     }
     #mobileLocation p{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 300;
 
-        margin-top: 10%;
         margin-left: 2.5%;
     }
     #mobileLocation a{
         color: green;
+        font-weight: 400;
+        font-size: 1.3rem;
     }
     #mobileBut{
         margin-top: 15%;
