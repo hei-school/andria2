@@ -590,6 +590,18 @@ svg {
     }
     #Donate{
         width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    #Donate a{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
     #headerMobile{
         display: flex; 
