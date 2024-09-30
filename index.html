@@ -2,377 +2,397 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Andria & Andria</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-    
+
 <body>
-   
-    <div class="mobile-content">
-        <div id="navMobile">
-            <div id="logo">
-                <h2>
-                    <a href="#header">
-                        Andria & Andria
-                    </a>
-                </h2>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Chargement...</span>
             </div>
-            <div id="button">
-                <button id="Donate">
-                    <a href="#don" class="donateText">
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-4 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-graduation-cap me-3"></i>Andria & Andria</h1>
+                </a>
+                
+                <!-- Donation button for mobile version (visible on small screens) -->
+                <a href="" class="btn btn-secondary py-2 px-3 d-lg-none" style="display: none;">
+                    <i class="fa fa-donate"></i>
+                </a>
+            
+                <!-- Donation button for larger screens -->
+                <div class="collapse navbar-collapse py-4" id="navbarCollapse">
+                    <a href="#donation" class="btn btn-secondary py-sm-3 px-4 ms-auto d-none d-lg-block">
                         Faire un don
+                        <i class="fa fa-donate ms-3"></i>
                     </a>
-                </button>
-            </div>
-        </div>
+                </div>
+            </nav>            
 
-
-        <div id="headerMobile">
-            <h1>
-                Andria & Andria
-            </h1>
-            <p>
-                Nous sommes une association à but non lucratif <br>
-                dont la mission est de vaincre la pauvreté avec
-                l'éducation comme arme.
-                <br>
-            </p>
-    
-            <a href="#don" id="DonateNowMobile">
-                Faire un don ! <img src="asset/right-chevron.png" alt="image not found">
-            </a>
-        </div>
-
-        <div id="mobileLocation">
-            <p>L'association est de <a href="https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:202400172160">droit français</a>, mais oeuvre dans le monde entier.</p>
-            <img src="asset/earth2.jpg" alt="image not found">
-            <h1>
-                En particulier, Andria & Andria oeuvre prioritairement là où la pauvreté frappe le plus durement, et où
-                l'éducation est la plus fragile.
-            </h1>
-            <img src="asset/mada3-removebg-preview.png" alt="">
-            <p>Comme premier pays d'intervention, l'association a choisi <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_%C3%A9ducatif_%C3%A0_Madagascar">Madagascar</a>, pays de naissance de ses
-                membres fondateurs.</p>
-        </div>
-
-        <div id="mobileBut"> 
-            <h1>
-                Nous éduquons pour gagner notre guerre contre notre pauvreté.
-            </h1>
-            <img src="asset/classroom2.jpg" alt="image not found">
-            <p>
-                Les mots vaincre et arme dans la mission de l'association n'ont pas été choisi au hasard. Ces mots
-                suscitent l'idée de guerre. Notre association est en guerre. Nous n'éduquons pas pour le simple
-                plaisir d'apprendre.
-            </p>
-        </div>
-
-
-        <div id="don">
-            <h1>
-                Qui soutenir ?
-            </h1>
-            <div class="donMobileContainer">
-                <h1>
-                    <a href="https://hei.school" class="HEI">Haute Ecole
-                        d'Informatique de Madagascar (HEI)
-                    </a>
-                </h1>
-                <p>
-                    10*50€ pour financer l'année universitaire d'un(e) étudiant(e) chez HEI, le principal partenaire de l'association.
-                </p>
-            </div>
-            <div class="donMobileContainer">
-                <h1>
-                    <a href="https://buy.stripe.com/5kAcOQ4cffrNgdGaEG">Ecole d'Informatique de Madagascar (LEI)</a>
-                </h1>
-                <p>
-                    6*20€ pour soutenir un(e) élève de l'Ecole d'Informatique de Madagascar (LEI), l'école qui
-                    prépare les lycéens à entrer chez HEI pendant un semestre scolaire.
-                </p>
-            </div>
-            <div class="donMobileContainer">
-                <h1>
-                    <a href="https://buy.stripe.com/eVacOQ8svfrNe5y4gj">Lycée Gallo Junior Antsirabe
-                    </a>
-                </h1>
-                <p>
-                    10*30€ pour soutenir un(e) élève du lycée Gallo Junior Antsirabe pendant une année scolaire.
-                </p>
-            </div>
-            <div class="donMobileContainer">
-                <h1>
-                    <a href="https://buy.stripe.com/bIYg12fUXa7t2mQeUU">Un montant libre
-                    </a>
-                </h1>
-                <p>
-                    Un montant libre,ponctuel, entre 10€ et 990€ selon la quantité que vous choisissez, pour
-                    dispenser par exemple
-                    nos formations à l'établissement d'une stratégie patrimoniale en partant de situations initiales
-                    difficiles, ou pour construire des laboratoires de science.
-                </p>
-            </div>
-        </div>
-        <div id="mobileFooter">
-            <h1>
-                Contact
-            </h1>
-            <a href="mailto:contact@hei.school">contact@hei.school</a>
-            <p>
-                Andria & Andria © 2024
-            </p>
-        </div>
-
-    </div>
-
-
-
-
-
-    <div class="pc-content">
-        <nav>
-            <div id="logo">
-                <h1>
-                    <a href="#header">
-                        Andria & Andria
-                    </a>
-                </h1>
-            </div>
-            <div id="button">
-                <button id="Donate">
-                    <a href="#don" class="donateText">
-                        Faire un don
-                    </a>
-                </button>
-            </div>
-        </nav>
-    
-      
-        <header id="header">
-            <div class="container">
-    
-            </div>
-            <h1>
-                Andria & Andria
-                <hr>
-            </h1>
-            <p>
-                Nous sommes une association à but non lucratif <br>
-                dont la mission est de vaincre la pauvreté avec
-                l'éducation comme arme.
-                <br>
-            </p>
-    
-            <a href="#don" id="DonateNow">
-                Faire un don ! <img src="asset/right-chevron.png" alt="image not found">
-            </a>
-        </header>
-        
-    
-    
-        <main>
-            <div class="location" id="location">
-                <h1 id="location_text">
-                    En particulier, Andria & Andria oeuvre prioritairement là où la pauvreté frappe le plus durement, et où
-                    l'éducation est la plus fragile.
-                </h1>
-                <div class="item">
-                    <div class="item_container">
-                        <img src="asset/earth2.jpg" alt="image not found">
-                        
-                        <p>L'association est de <a href="https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:202400172160">droit français</a>, mais oeuvre dans le monde entier.</p>
-                    </div>
-                    <div class="linker">
-    
-                    </div>
-                    <div class="item_container">
-                        <img src="asset/mada3-removebg-preview.png" alt="">
-                        <p>Comme premier pays d'intervention, l'association a choisi <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_%C3%A9ducatif_%C3%A0_Madagascar">Madagascar</a>, pays de naissance de ses
-                            membres fondateurs.</p>
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-6 pt-5 text-center text-lg-start">
+                            <h1 class="display-4 text-white mb-4 animated slideInLeft">Andria & Andria</h1>
+                            <p class="text-white animated slideInLeft mb-5">
+                                Nous sommes une association à but non lucratif
+                                dont la mission est de vaincre la pauvreté avec l'éducation comme arme.
+                            </p>
+                            <a href="#donation" class="btn btn-secondary py-3 px-5 me-3 animated slideInLeft">
+                                Faire un don <i class="fa fa-donate ms-3"></i>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn pb-5 mb-1" src="img/hero1.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            <div class="but">
-                <img src="asset/classroom2.jpg" alt="image not found">
-                <div class="but_text_container">
-                    <h1>
-                        Nous éduquons pour gagner notre guerre contre notre pauvreté.
-                    </h1>
-                    <p>
-                        Les mots vaincre et arme dans la mission de l'association n'ont pas été choisi au hasard. Ces mots
-                        suscitent l'idée de guerre. Notre association est en guerre. Nous n'éduquons pas pour le simple
-                        plaisir d'apprendre.
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3"
+                                placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Domain Search Start -->
+        <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp"
+                            data-wow-delay="0.1s" style="max-width: 600px;">
+                            <h1 class="mb-3">Au cœur des communautés les plus vulnérables</h1>
+                            <p class="mb-1">En particulier, Andria & Andria oeuvre prioritairement là où la pauvreté
+                                frappe le plus durement, et où l'éducation est la plus fragile.</p>
+                        </div>
+
+                        <!-- Responsive divs side by side -->
+                        <div class="row mt-5">
+                            <div class="col-md-6 d-flex justify-content-center align-items-center mb-3">
+                                <div class="content-box text-center text-md-start">
+                                    <!-- Contenu du premier div -->
+                                    <p>L'association est de <b class="text-primary">droit français</b>, mais oeuvre
+                                        <br />dans le monde entier.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center align-items-center mb-3">
+                                <div class="content-box text-center text-md-start">
+                                    <!-- Contenu du deuxième div -->
+                                    <p>
+                                        Comme premier pays d'intervention, l'association a choisi <b
+                                            class="text-primary">Madagascar</b>, pays de naissance de ses membres
+                                        fondateurs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Domain Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">Nous éduquons pour gagner notre guerre contre notre pauvreté.</h1>
+                        </div>
+                        <p class="mb-4">
+                            Les mots vaincre et arme dans la mission de l'association n'ont pas été choisi au hasard.
+                            Ces mots suscitent l'idée de guerre. Notre association est en guerre.
+                            Nous n'éduquons pas pour le simple plaisir d'apprendre.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-handshake fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">3</h2>
+                                    <p class="mb-0">Écoles partenaires</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">40</h2>
+                                    <p class="mb-0">Élèves parrainés</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-euro-sign fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1"><span data-toggle="counter-up">5000</span></h2>
+                                    <p class="mb-0">Dons collectés</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/education-rmbg.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Donation Start -->
+        <div class="container-xxl py-5" id="donation">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp"
+                    data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Qui soutenir ?</h1>
+                    <p class="mb-1">
+                        Nous choisissons de soutenir les élèves qui, malgré leur potentiel,
+                        se heurtent à des barrières liées à la pauvreté et au manque de ressources éducatives.
+                        Chaque don est une opportunité de leur offrir une arme puissante : le savoir.
                     </p>
                 </div>
-            </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            <div class="don" id="don">
-                <h1>
-                    Qui soutenir ?
-                </h1>
-                <div class="don_container">
-                    <div class="don_text">
-                        <h1>
-                            <a href="https://hei.school" class="HEI">Haute Ecole
-                                d'Informatique de Madagascar (HEI)
-                            </a>
-                        </h1>
-                        <p>
-                            10*50€ pour financer l'année universitaire d'un(e) étudiant(e) chez HEI, le principal partenaire de l'association.
-                        </p>
+                <div class="row gy-5 gx-4">
+                    <!-- Card 1 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle"
+                                style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-graduation-cap text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Haute École d'Informatique de Madagascar (HEI)</h4>
+                                <p class="mb-0">
+                                    10*50€ pour financer l'année universitaire d'un(e) étudiant(e) chez HEI, le
+                                    principal partenaire de l'association.
+                                </p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <h1 class="mb-3">
+                                    <small class="align-top"
+                                        style="font-size: 22px; line-height: 45px;">€</small>50<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;"> x 10
+                                        mois</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" href="https://buy.stripe.com/00g6qs247frN7Ha6op" target="_blank" rel="noopener noreferrer">
+                                    Contribuer <i class="fa fa-donate ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="https://buy.stripe.com/00g6qs247frN7Ha6op">
-                        <img src="asset/next.png" alt="">
-                    </a>
-                </div>
-                <div class="don_container">
-                    <div class="don_text">
-                        <h1>
-                            <a href="https://buy.stripe.com/5kAcOQ4cffrNgdGaEG">Ecole d'Informatique de Madagascar (LEI)</a>
-                        </h1>
-                        <p>
-                            6*20€ pour soutenir un(e) élève de l'Ecole d'Informatique de Madagascar (LEI), l'école qui
-                            prépare les lycéens à entrer chez HEI pendant un semestre scolaire.
-                        </p>
-                    </div>
-                    <a href="https://buy.stripe.com/5kAcOQ4cffrNgdGaEG">
-                        <img src="asset/next.png" alt="">
-                    </a>
-                </div>
-                <div class="don_container" >
-                    <div class="don_text">
-                        <h1>
-                            <a href="https://buy.stripe.com/eVacOQ8svfrNe5y4gj">Lycée Gallo Junior Antsirabe
-                            </a>
-                        </h1>
-                        <p>
-                            10*30€ pour soutenir un(e) élève du lycée Gallo Junior Antsirabe pendant une année scolaire.
-                        </p>
-                    </div>
-                    <a href="https://buy.stripe.com/eVacOQ8svfrNe5y4gj">
-                        <img src="asset/next.png" alt="image not found">
-                    </a>
-                </div>
-                <div class="don_container">
-                    <div class="don_text">
-                        <h1>
-                            <a href="https://buy.stripe.com/bIYg12fUXa7t2mQeUU">Un montant libre
-                            </a>
-                        </h1>
-                        <p>
-                            Un montant libre,ponctuel, entre 10€ et 990€ selon la quantité que vous choisissez, pour
-                            dispenser par exemple
-                            nos formations à l'établissement d'une stratégie patrimoniale en partant de situations initiales
-                            difficiles, ou pour construire des laboratoires de science.
-                        </p>
-                    </div>
-                    <a href="https://buy.stripe.com/bIYg12fUXa7t2mQeUU">
-                        <img src="asset/next.png" alt="">
-                    </a>
-                </div>
-            </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-            <footer>
-                <svg xmlns="http://www.w3.org/2000/svg" style="transform:rotate(180deg) translateY(-3px);"
-                    viewBox="0 0 1000 100" preserveAspectRatio="none">
-                    <path fill="green" opacity="0.83"
-                        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
-                    </path>
-                    <path fill="greenyellow" opacity="0.66"
-                        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
-                    </path>
-                    <path fill="rgb(99, 158, 11)" 
-                        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
-                    </path>
-                </svg>
-    
-                <div class="conteneur1">
-                    <div class="text_conteneur_1">
-                        <h1>
-                            "L'éducation est l'arme la plus puissante pour changer le monde" disait Mandela. <br> Soutenons
-                            nos
-                            guerriers qui sont au
-                            front !
-                        </h1>
-                        <p>
-                            Être en guerre, c'est s'imposer une discipline militaire, c'est avoir une volonté de fer, c'est
-                            faire des sacrifices.
-                            Andria & Andria est l'allié de toutes les écoles du monde qui transmettent ces valeurs à leurs
-                            élèves et étudiants. À
-                            chaque fois que la pauvreté nous frappe douloureusement, nous répondrons avec une discipline,
-                            une
-                            volonté et des
-                            sacrifices de poids au moins égal.
-                        </h1>
-                        <p>
-                            
-                        </p>
-                    </div>
-                    <div class="text_conteneur_2">
-                        <h1>
-                            Contact
-                        </h1>
-                        
-                        <a href="mailto:contact@hei.school"><img src="asset/link.png" alt="">contact@hei.school</a>
-                    </div>
-                </div>
-                <div class="conteneur2">
-                    <div class="text1">
-                        <p>
-                            Andria & Andria © 2024
-                        </p>
-                    </div>
-                    <div class="text2">
-                    </div>
-                </div>
-            </footer>
-    
-    
-    
-    
-        </main>
-    </div>
-    
 
+                    <!-- Card 2 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative shadow rounded border-top border-5 border-secondary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle"
+                                style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-home text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">L'École d'Informatique de Madagascar (LEI)</h4>
+                                <p class="mb-0">
+                                    6*20€ pour soutenir un(e) élève de l'Ecole d'Informatique de Madagascar (LEI),
+                                    l'école qui prépare les lycéens à entrer chez HEI pendant un semestre scolaire.
+                                </p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <h1 class="mb-3">
+                                    <small class="align-top"
+                                        style="font-size: 22px; line-height: 45px;">€</small>20<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;"> x 6
+                                        mois</small>
+                                </h1>
+                                <a class="btn btn-secondary px-4 py-2" href="https://buy.stripe.com/5kAcOQ4cffrNgdGaEG" target="_blank" rel="noopener noreferrer">
+                                    Contribuer <i class="fa fa-donate ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="position-relative shadow rounded border-top border-5 border-warning">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-warning rounded-circle"
+                                style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-school text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Lycée Gallo Junior Antsirabe</h4>
+                                <p class="mb-0">10*30€ pour soutenir un(e) élève du lycée Gallo Junior Antsirabe pendant
+                                    une année scolaire.</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <h1 class="mb-3">
+                                    <small class="align-top"
+                                        style="font-size: 22px; line-height: 45px;">€</small>30<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;"> x 10
+                                        mois</small>
+                                </h1>
+                                <a class="btn btn-warning px-4 py-2" href="https://buy.stripe.com/eVacOQ8svfrNe5y4gj" target="_blank" rel="noopener noreferrer">
+                                    Contribuer <i class="fa fa-donate ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="position-relative shadow rounded border-top border-5 border-success">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-success rounded-circle"
+                                style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-star text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Un montant libre</h4>
+                                <p class="mb-0">
+                                    Un montant libre,ponctuel, entre 10€ et 990€ selon la quantité que vous choisissez,
+                                    pour dispenser par exemple nos formations à l'établissement d'une stratégie
+                                    patrimoniale
+                                    en partant de situations initiales difficiles, ou pour construire des laboratoires
+                                    de science.
+                                </p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">À partir de 10€</p>
+                                <h1 class="mb-3">
+                                    <small class="align-top"
+                                        style="font-size: 22px; line-height: 45px;">€</small>10<small
+                                        class="align-bottom" style="font-size: 16px; line-height: 40px;"> à 990
+                                        €</small>
+                                </h1>
+                                <a class="btn btn-success px-4 py-2" href="https://buy.stripe.com/bIYg12fUXa7t2mQeUU" target="_blank" rel="noopener noreferrer">
+                                    Contribuer <i class="fa fa-donate ms-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Donation End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold text-white mb-4">Contact</h5>
+                        <div class="position-relative" style="max-width: 400px;">
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:contact@hei.school"
+                                    style="color: white; font-weight: bold;">contact@hei.school</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-12">
+                                <h5 class="fw-bold text-white mb-4">
+                                    "L'éducation est l'arme la plus puissante pour changer le monde" disait Mandela.
+                                    Soutenons nos guerriers qui sont au front !
+                                </h5>
+                                <p>
+                                    Être en guerre, c'est s'imposer une discipline militaire, c'est avoir une volonté de
+                                    fer,
+                                    c'est faire des sacrifices. Andria & Andria est l'allié de toutes les écoles du
+                                    monde qui
+                                    transmettent ces valeurs à leurs élèves et étudiants. À chaque fois que la pauvreté
+                                    nous
+                                    frappe douloureusement, nous répondrons avec une discipline, une volonté et des
+                                    sacrifices
+                                    de poids au moins égal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Andria & Andria</a>, Tous droits réservés.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Conçu par <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
